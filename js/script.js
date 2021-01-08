@@ -13,7 +13,10 @@ for (var i = 0.005; i <= 1; i = i + 0.01) {
 }
 
 //Prevalence slider
-var prev = 1000
+var prev = 1000;
+d3.select('p#value-prev')
+            .text("1 in " + parseInt(Math.round(prev)))
+            .style('font-size', '11px');
 var sliderPrev = d3
     .sliderBottom()
     .min(d3.max(prevalence))
@@ -47,6 +50,9 @@ gPrev.call(sliderPrev);
 
 //Heterogeneity slider
 var het = 0.05;
+d3.select('p#value-het')
+            .text(d3.format('.2')(het))
+            .style('font-size', '11px');
 var sliderHet = d3
     .sliderBottom()
     .min(d3.min(heterogeneity))

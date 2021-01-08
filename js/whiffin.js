@@ -29,7 +29,7 @@ function whiffin(het, prev, pen) {
 class WhiffinPlot {
 
     constructor() {
-        this.margin = { top: 10, right: 30, bottom: 30, left: 60 };
+        this.margin = { top: 10, right: 80, bottom: 30, left: 80 };
         this.width = 460 - this.margin.left - this.margin.right;
         this.height = 400 - this.margin.top - this.margin.bottom;
         this.svg = d3.select("#whiffin")
@@ -142,7 +142,7 @@ class WhiffinPlot {
             .style("fill", "none")
             .style("pointer-events", "all")
             .attr('width', this.width)
-            .attr('height', this.height)
+            .attr('height', this.height - 130)
             .on('mouseover', mouseover)
             .on('mousemove', mousemove)
             .on('mouseout', mouseout);
