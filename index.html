@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+<html>
 <meta charset="utf-8" />
 <meta
   name="viewport"
@@ -31,19 +32,16 @@
     stroke: steelblue;
   }
 
-  .tooltip {
-        position: absolute;
-    }
-
-    .tooltip p {
-        background-color: white;
-        border: #eee 1px solid;
-        padding: 2px;
+  div.tooltip {	
+      position: absolute;
         font-family: sans-serif;
         font-size: 11px;
+      background: #fff;	
+      padding: 2px;
+      border: 1px solid gray;	
     }
 </style>
-<script src="https://d3js.org/d3.v6.min.js"></script>
+<script src="https://d3js.org/d3.v5.min.js"></script>
 <script src="https://unpkg.com/d3-simple-slider"></script>
 
 <link
@@ -52,7 +50,7 @@
   integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
   crossorigin="anonymous"
 />
-
+<body>
 <div class="container">
   <h4>Disease Parameters</h4>
   <div class="row align-items-center">
@@ -73,4 +71,6 @@
     </div>
 </div>
 <script type="application/javascript" src="js/whiffin.js"></script>
-<script type="application/javascript" src="js/cript.js"></script>
+<script type="application/javascript" src="js/script.js"></script>
+</body>
+</html>
