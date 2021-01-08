@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 title: Whiffin calculator
 ---
@@ -71,3 +72,14 @@ title: Whiffin calculator
 </div>
 <script type="application/javascript" src="whiffin.js"></script>
 <script type="application/javascript" src="script.js"></script>
+=======
+## `gaff`: gnomad allele frequency finder
+
+### Overview
+
+This project provides an interactive platform for exploring disease-specific allele frequency thresholds for classifying gnomAD variants as likely benign. More information coming soon!
+
+### Support or Contact
+
+Contact `phumph` `at` `gmail.com`.
+>>>>>>> gh-pages
