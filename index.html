@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<meta charset="utf-8" />
+<meta
+  name="viewport"
+  content="width=device-width, initial-scale=1, shrink-to-fit=no"
+/>
+<title>Weibull calculator (v1)</title>
+<style type="text/css">
+  /* 13. Basic Styling with CSS */
+
+  /* Style the lines by removing the fill and applying a stroke */
+  .line {
+    fill: none;
+    stroke: #ffab00;
+    stroke-width: 3;
+  }
+
+  .overlay {
+    fill: none;
+    pointer-events: all;
+  }
+
+  /* Style the dots by assigning a fill and stroke */
+  .dot {
+    fill: #ffab00;
+    stroke: #fff;
+  }
+
+  .focus circle {
+    fill: none;
+    stroke: steelblue;
+  }
+
+  .tooltip {
+        position: absolute;
+    }
+
+    .tooltip p {
+        background-color: white;
+        border: #eee 1px solid;
+        padding: 2px;
+        font-family: sans-serif;
+        font-size: 11px;
+    }
+</style>
+<script src="https://d3js.org/d3.v6.min.js"></script>
+<script src="https://unpkg.com/d3-simple-slider"></script>
+
+<link
+  rel="stylesheet"
+  href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+  integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+  crossorigin="anonymous"
+/>
+
+<div class="container">
+  <h4>Disease Parameters</h4>
+  <div class="row align-items-center">
+    <p>Prevalence:</p>
+    <div class="col-sm-2"><p id="value-prev"></p></div>
+    <div class="col-sm"><div id="slider-prev"></div></div>
+  </div>
+  <div class="row align-items-center">
+    <p>Max. allelic heterogeneity:</p>
+    <div class="col-sm-2"><p id="value-het"></p></div>
+    <div class="col-sm"><div id="slider-het"></div></div>
+  </div>
+</div>
+<div class="container">
+  <h4>Whiffin curve</h4>
+    <div id="whiffin" class="view">
+    <!-- WHIFFIN PLOT -->
+    </div>
+</div>
+<script type="application/javascript" src="js/whiffin.js"></script>
+<script type="application/javascript" src="js/cript.js"></script>
